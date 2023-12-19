@@ -1,16 +1,15 @@
 
-
-header {
+header { 
 
 }
-
 
 
 .continer {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
 }
+
 
 
 .header-content {
@@ -18,14 +17,13 @@ header {
    display: flex;
    align-items: center;
    border: 1px dotted skyblue;
-
 }
 
 ul 	{
 	display: flex;
 }
-
-li a {
+  
+ li a {
 	color:#000000;
     font-family: Helvetica;
     font-size: 13px;
@@ -141,5 +139,4 @@ li a {
    color: firebrick;
    background-color: lavenderblush;
 }
-
 
