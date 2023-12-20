@@ -3,6 +3,38 @@ header {
 
 }
 
+.button {
+   position: relative;
+   padding: 10px 22px;
+   background: #7d2ae8;
+   border-radius: 6px;
+   color: white;
+   border: none;
+   font-size: 17px;
+   font-weight: 400px;
+   cursor: pointer;
+   transition: 0.2s ease;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+.button::before
+.button::after {
+   content: "";
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 100%;
+   width: 150%;
+   z-index: -1;
+   border: 2px solid red;
+   background-repeat: no-repeat;
+}
+
+
 
 .continer {
    width: 100%;
@@ -26,7 +58,7 @@ ul 	{
  li a {
 	color:#000000;
     font-family: Helvetica;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: 20px;
