@@ -162,20 +162,6 @@ ul 	{
 }
 
 
-
-.addict {
-   background-image: url(../images/th.jpg);
-   height: 430px;
-   width: 100%;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-
 .addict h4 {
    margin-bottom: 30px;
    font-size: 50px;
@@ -183,7 +169,20 @@ ul 	{
    color: red;
 }
 
-
+.addict {
+   background-image: url(../images/th.jpg);
+   height: 300px;
+   margin-left: 550px;
+   width: 610px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+   
+}
 .cont h5 {
    margin-top: 10px;
    font-size: 50px;
@@ -192,11 +191,13 @@ ul 	{
   margin-left: 515px;
 }
 
-.cont p2 {
-   font-size: 30px;
+.idk p2 {
+   margin-top: 4px;
+   font-size: 36px;
    font-weight: 100px;
-   margin-left: 300px;
+   margin-left: 230px;
    color: firebrick;
-   background-color: lavenderblush;
+   
 }
+
 
