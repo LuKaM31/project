@@ -1,0 +1,11 @@
+@media only screen and (max-width: 605px) {
+	.parent-box  {
+		justify-content: space-evenly;
+	}
+}
+
+@media only screen and (max-width: 324px) {
+	.parent-box  {
+		height: 800px;
+	}
+}

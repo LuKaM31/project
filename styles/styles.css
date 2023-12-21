@@ -1,4 +1,22 @@
 
+.resp {
+   margin: 0 auto;
+   max-width: 1200px;
+   width: 100%;
+ }
+.parent-box {
+   border: 3px solid firebrick;
+   display: flex;
+   justify-content: center;
+   height: 1005px;
+   flex-wrap: wrap;
+}
+.child-box {
+   height: 500px;
+   width: 1200px;
+   
+   margin: 5px;
+}
 header { 
 
 }
@@ -57,7 +75,7 @@ header {
    padding: 18px 0;
    display: flex;
    align-items: center;
-   border: 1px dotted skyblue;
+   
 }
 
 ul 	{
@@ -67,11 +85,11 @@ ul 	{
  li a {
 	color:#000000;
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 300;
-    line-height: 20px;
-    margin-left: 80px;
+    font-weight: 100;
+    line-height: normal;
+    margin-left: 50px;
     text-transform: uppercase;
  }
 
@@ -83,13 +101,14 @@ ul 	{
 .addic {
    background-image: url(../images/addict.jpg);
    height: 430px;
-   width: 100%;
+   width: 1200px;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   display: flex;
-   justify-content: center;
+      justify-content: center;
    align-items: center;
+   display: flex;
+
 }
 
 .addic h1 {
@@ -110,15 +129,15 @@ ul 	{
 .content p {
    font-size: 30px;
    font-weight: 100px;
-   margin-left: 300px;
+   margin-left: 100px;
 }
 
 
 .element { 
   display: inline-block;
   vertical-align: middle;
-   width: 1500px;
- height: 250px;
+   width: 1200px;
+ height: 216px;
  background: red; 
  display: inline-block;
 } 
@@ -126,15 +145,15 @@ ul 	{
 
 .element h3 {
    font-size: 50px;
-   padding-left: 550px;
+   padding-left: 400px;
    padding-top: 19px;
    color: darkred;
 }
 
 .element p1 {
    padding-left: 20px;
-   font-size: 50px;
-   width: 300px;
+   font-size: 45px;
+   width: 250px;
    height: 100px;
 }
 
