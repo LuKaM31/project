@@ -5,7 +5,7 @@
    width: 100%;
  }
 .parent-box {
-   border: 3px solid firebrick;
+   
    display: flex;
    justify-content: center;
    height: 1005px;
@@ -13,7 +13,7 @@
 }
 .child-box {
    height: 500px;
-   width: 1200px;
+   width: 100%;
    margin: 5px;
 }
 
@@ -46,7 +46,7 @@ header {
    left: 50%;
    transform: translateX(-50%);
    height: 100%;
-   width: 150%;
+   width: 100%;
    z-index: -1;
    border: 2px solid red;
    background-repeat: no-repeat;
@@ -69,7 +69,11 @@ header {
    margin: 0 auto;
 }
 
-
+/* The first line of every <p> element. */
+p::first-line {
+  color: red;
+  text-transform: uppercase;
+}
 
 .header-content {
    padding: 18px 0;
@@ -85,6 +89,7 @@ ul 	{
  li a {
 	color:#000000;
     font-family: Helvetica;
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 100;
@@ -96,12 +101,14 @@ ul 	{
  input {
    font-size: 15px;
    margin-left: 20px;
+   width: 13%;
  }
 
 .addic {
    background-image: url(../images/addict.jpg);
+
    height: 430px;
-   width: 1200px;
+   width: 100%;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -121,31 +128,32 @@ ul 	{
 .content h2 {
    margin-top: 10px;
    font-size: 50px;
-   font-weight: 200px;
+   font-weight:200px;
    color: firebrick;
-  margin-left: 515px;
+  margin-left: 0px;
 }
 
 .content p {
    font-size: 30px;
    font-weight: 100px;
-   margin-left: 100px;
+   width: 100%;
+   
 }
 
 
 .element { 
   display: inline-block;
   vertical-align: middle;
-   width: 1200px;
+   width: 100%;
  height: 216px;
- background: red; 
+ 
  display: inline-block;
 } 
 
 
 .element h3 {
-   font-size: 50px;
-   padding-left: 400px;
+   font-size: 60px;
+   padding-left: 0px;
    padding-top: 19px;
    color: darkred;
 }
@@ -153,14 +161,17 @@ ul 	{
 .element p1 {
    padding-left: 20px;
    font-size: 45px;
-   width: 250px;
+   width: 100%;
    height: 100px;
 }
 
 .active {
-  color: #4E6FAE;
+  color: #4e6fae;
 }
 
+.addict {
+   
+}
 
 .addict h4 {
    margin-bottom: 30px;
@@ -172,8 +183,9 @@ ul 	{
 .addict {
    background-image: url(../images/th.jpg);
    height: 300px;
-   margin-left: 550px;
-   width: 610px;
+   margin-bottom:70px;
+   margin-left: 0px;
+   width: 100%;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -184,20 +196,37 @@ ul 	{
    
 }
 .cont h5 {
+    
    margin-top: 10px;
-   font-size: 50px;
+   font-size: 60px;
    font-weight: 200px;
    color: firebrick;
-  margin-left: 515px;
+  margin-left: 0px;
+
 }
 
 
 .idk p2 {
-   margin-top: 4px;
-   font-size: 35px;
+   margin-top: 30px;
+   font-size: 30px;
    font-weight: 100px;
-   margin-left: 230px;
+   margin-left: 130px;
    color: firebrick;
    
+}
+
+.fil {
+    background-image: url(../images/smoker.jpg);
+   height: 300px;
+   margin-left: 0px;
+   margin-top: 30px;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
 }
 
