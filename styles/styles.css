@@ -96,7 +96,7 @@ ul {
 
   
  li a {
-	color: darkblue;
+	color: black;
     font-family: Helvetica;
     margin-left: 50px;
     font-size: 15px;
@@ -190,7 +190,7 @@ input {
 }
 
 .active {
-  color: #4e6fae;
+  color: darkblue;
 }
 
 
