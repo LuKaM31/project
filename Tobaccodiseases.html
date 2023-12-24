@@ -8,6 +8,32 @@
 	<title>Addiction to tobacco</title>
 </head>
 <body>
+  <div class="cursor"></div>
+  <script type="text/javascript">
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+    //follow cursor on mousemove
+    document.addEventListener("mousemove", (e) => {
+      let x = e.pageX;
+      let y = e.pageY;
+
+      cursor.style.top = y + "px" ;
+      cursor.style.left = x + "px"; 
+      cursor.style.display = "block";
+
+      //cursor effects on mouse stopped
+      function mouseStopped(){
+        cursor.style.display = "none";
+      }
+      clearTimeout(timeout);
+      timeout = setTimeout(mouseStopped, 1000);
+    });
+
+    //cursor effects on mouseout
+    document.addEventListener("mouseout", () => {
+      cursor.style.display = "none"
+    })
+  </script>
          <div class="resp parent-box"> 
       <div class="child-box">
   <header>
@@ -39,7 +65,7 @@
   </section>
   <section class="main-content"> 
    <div class="left-side">
-    <h6>The harmfulness of tobacco</h6>
+    <h6z>The harmfulness of tobacco</h6>
     <p3> Tobacco is very harmful to the body, many people know this, but they still smoke because many people do not understand how dangerous tobacco is.</p3>
   </div>
   <div class="right-side">

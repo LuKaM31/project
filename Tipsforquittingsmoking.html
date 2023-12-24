@@ -8,6 +8,32 @@
 	<title>Addiction to tobacco</title>
 </head>
 <body>
+	<div class="cursor"></div>
+	<script type="text/javascript">
+		const cursor = document.querySelector(".cursor");
+		var timeout;
+		//follow cursor on mousemove
+		document.addEventListener("mousemove", (e) => {
+			let x = e.pageX;
+			let y = e.pageY;
+
+			cursor.style.top = y + "px" ;
+			cursor.style.left = x + "px"; 
+			cursor.style.display = "block";
+
+			//cursor effects on mouse stopped
+			function mouseStopped(){
+				cursor.style.display = "none";
+			}
+			clearTimeout(timeout);
+			timeout = setTimeout(mouseStopped, 1000);
+ 		});
+
+		//cursor effects on mouseout
+		document.addEventListener("mouseout", () => {
+			cursor.style.display = "none"
+		})
+	</script>
 	<div class="resp parent-box"> 
 	   	<div class="child-box">
   <header>
@@ -27,3 +53,33 @@
   	</ul>
   </nav>
   	</div>
+  </header>
+  <section class="kam"> 
+    <h class="afil">How to quit smoking?</h>
+  </section>
+  <section class="stop"> 
+  	<h class="ova">Quit smoking now!</h>
+  </section>
+
+    <section class="m-content"> 
+   <div class="leftside">
+    <h class="tab">Quit smoking.</h>
+    <p class="ugit"> I know it's not easy because the composition of tobacco makes us addicted to tobacco and then we can't quit, but here you will find some effective ways to quit smoking.</p>
+  </div>
+  <div class="rightside">
+  <div class="olfin">
+    <img src="images/q.jpg" alt="olfin-image" />
+    <p class="npr">If you want to quit smoking, it's best to do it while traveling. The new environment will help you a lot.</p>
+</div>
+
+ <div class="allgi">
+    <img src="images/sha.jpg" alt="allgi-image">
+    <p class="seof">If you want to quit or don't want to smoke, avoid places where people smoke because the environment plays a big role.</p>
+</div>
+  </div>
+  <div class="gial">
+    <img src="images/stop.jpg" alt="gial-image">
+    <p class="padi">If you want to quit smoking, reducing the dose is not an effective way, it is better if you do not reduce the dose and quit smoking altogether.</p>
+</div>
+  
+ 

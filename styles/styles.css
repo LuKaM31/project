@@ -1,3 +1,52 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "poppins", sans-serif;
+}
+body {
+   height: 130vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  cursor: none;
+}
+
+.cursor {
+   z-index: 999;
+   background: #2696E8;
+   position: fixed;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   pointer-events: none;
+   box-shadow: 0 0 20px #2696E8,
+               0 0 60px #2696E8,
+               0 0 100px #2696E8;
+  animation: colors 5s infinite;
+transform: translate(-50%, -50%);
+}
+
+@keyframes colors {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+   content: '';
+   
+   background-image: #2696E8;
+   width: 50px;
+   height: 50px;
+   opacity: 0.2;
+   transform: translate(-30%, -30%);
+   border-radius: 50%;
+}
+
 .resp {
   margin: 0 auto;
   max-width: 1200px;
@@ -15,6 +64,8 @@
    margin: 5px;
 }
 
+
+
 header { 
   
 }
@@ -26,35 +77,27 @@ header {
 }
 
 .button {
-  position: relative;
-  padding: 10px 22px;
+   position: relative;
+   padding: 10px 22px;
   background: #7d2ae8;
-  border-radius: 6px;
   color: white;
+  border-radius: 6px;
   border: none;
+  cursor: pointer;
   font-size: 17px;
   font-weight: 400px;
-  cursor: pointer;
   transition: 0.2s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+  position: relative;
+  isolation: isolate;
 }
 
 .button:active {
   transform: scale(0.97);
 }
 
-.button::before
-.button::after {
-   content: "";
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
-   height: 100%;
-   width: 100%;
-   z-index: -1;
-   border: 2px solid red;
-   background-repeat: no-repeat;
-}
+
 .button::before .button::after {
   content: '';
   position: absolute;
@@ -217,7 +260,6 @@ input {
    
 }
 .cont h5 {
-    
    margin-top: 10px;
    font-size: 60px;
    font-weight: 200px;
@@ -308,12 +350,12 @@ input {
 }
 
 .abou {
-padding-left: 10px;
+   padding-left: 10px;
   width: 100%;
- height: 400px;
+ height: 300px;
  display: inline-block;
- vertical-align: middle;
- background-color: gray;
+vertical-align: middle;
+  background-color: lightgrey;
 }
 
 .mus {
@@ -322,7 +364,14 @@ padding-left: 10px;
    font-size: 50px;
     color: black;
 }
-
+.div3 {
+   padding-top: 40px;
+   padding-left: 10px;
+  display: inline-block;
+  width: 578px;
+  height: 735px;
+  
+}
 
 .zaf { 
    vertical-align: middle;
@@ -331,12 +380,12 @@ padding-left: 10px;
    font-size: 20px;
    color: blue;
    padding-left: 100px;
-   padding-top: 150px;
+   padding-top: 30px;
 }
 
 
 .anda {
-   vertical-align: middle;
+ vertical-align: middle;
    padding-top: 20px;
    display: inline-block;
    width: 100%;
@@ -345,15 +394,107 @@ padding-left: 10px;
    padding-left: 100px;
 }
 
-.div3 {
-   padding-left: 10px;
-  display: inline-block;
-  width: 578px;
-  height: 735px;
-  vertical-align: middle;
+.mayb {
+    vertical-align: middle;
+   padding-top: 20px;
+   display: inline-block;
+   width: 100%;
+   font-size: 20px;
+   color: blue;
+   padding-left: 100px;
 }
 
-.map {
-  display: inline-block;
+
+.afil  {
+   margin-top: 10px;
+   font-size: 50px;
+   font-weight: 200px;
+   color: blue;
+  margin-left: 0px;
+}
+
+.stop {
+   background-image: url(../images/qui.jpg);
+   height: 300px;
+   margin-top: 10px;
+   margin-bottom:70px;
+   margin-left: 0px;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.ova {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+}
+
+.m-content {
+   display: flex;
 
 }
+.leftside {
+   width: 235px;
+   border: 1px solid blue;
+}
+
+.tab {
+   color: darkred;
+   font-size: 20px;
+}
+
+.rightside { 
+   display: inline-block;
+   width: 300px;
+   margin-bottom: 50px;
+   
+   flex-wrap: wrap;
+}
+
+.olfin npr {
+   font-size: 19px;
+   width: 100px;
+}
+.olfin {
+   width: 286px;
+   height: 312px;
+}
+.olfin img {
+   margin-left: 3px;
+   width: 100%;
+}
+
+.allgi seof {
+   font-size: 19px;
+   width: 100px;
+}
+.allgi {
+   width: 286px;
+   height: 312px;
+}
+.allgi img {
+   display: flex;
+   margin-left: 3px;
+   width: 100%;
+}
+
+.gial padi {
+   font-size: 19px;
+   width: 100px;
+}
+.gial {
+   width: 286px;
+   height: 312px;
+}
+.gial img{
+   margin-left: 3px;
+   width: 100%;
+}
+
