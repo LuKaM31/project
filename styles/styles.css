@@ -47,6 +47,11 @@ transform: translate(-50%, -50%);
    border-radius: 50%;
 }
 
+a {
+   font-size: 10px;
+   margin-left: 4px;
+}
+
 .resp {
   margin: 0 auto;
   max-width: 1200px;
@@ -121,6 +126,7 @@ header {
 }
 
 .button {
+   margin-right: 5px;
    position: relative;
    padding: 10px 22px;
   background: #7d2ae8;
